@@ -1,0 +1,12 @@
+def letter_repeater():
+    input_line = ""
+    output_line = ''
+    while(input_line != 'stop'):
+        input_line = input("Enter input: ")
+        split = input_line.split(' ')
+        num = split[0]
+        letter = split[1]
+        while num > 0:
+            output_line += letter
+            num -= 1
+    return output_line
